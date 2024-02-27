@@ -35,7 +35,7 @@
 
   <p>{{ partial "conversation-link.html" . }} </p>
   <p>{{ partial "reply-by-email.html" . }}</p>
-  <p>{{ partial "tinyhits/embed.html" (dict "context" . ) }}</p>
+
 
 {{ if .Site.Params.include_conversation }}
     <script type="text/javascript" src="https://micro.blog/conversation.js?url={{ .Permalink }}"></script>
