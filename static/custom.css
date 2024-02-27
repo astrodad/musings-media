@@ -1,0 +1,37 @@
+.day-homepage {
+    margin: 30px 0;
+	clear: both;
+	background: var(--secondary-background-color);
+	padding: 1em;
+	border-radius: 10px;
+	box-shadow: 0 2px 3px rgba(0,0,0,.1);
+}
+
+
+.summary-container {
+        display: flex;
+    }
+
+    .map-thumbnail {
+        flex: 0 0 auto; /* Prevent thumbnail from growing */
+        margin-right: 20px; /* Adjust margin as needed */
+        border-radius: 8px; /* Rounded corners */
+        overflow: hidden; /* Ensure the rounded corners are applied */
+		border: 2px solid var(--meta-color); /* Border style */
+    }
+
+    .map-thumbnail img {
+        width: 100%; /* Make sure the image fills the container */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .summary-text {
+        flex: 1; /* Let text fill remaining space */
+    }
+
+    /* Make the thumbnail clickable */
+    .map-thumbnail a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
