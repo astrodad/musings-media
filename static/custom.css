@@ -10,7 +10,7 @@
 .tinylytics_kudos {
     /* this class styles the entire Kudos button. Works for both shortcode and embed methods. */
     background: var(--bg-color);
-    color: #2C2F3A;
+    color: var(--font-color);
     border-bottom: 0px solid var(--primary-color);
     border-top: 0px solid var(--primary-color)
 }
