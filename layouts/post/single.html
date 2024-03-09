@@ -25,6 +25,7 @@
     <section class="post-content e-content">
       {{ .Content }}
 
+
       {{ if .Params.location_latitude }}
       <img src="	https://api.mapbox.com/styles/v1/mapbox/streets-v12/static/pin-s+555555({{ .Params.location_longitude}},{{ .Params.location_latitude }})/{{ .Params.location_longitude}},{{ .Params.location_latitude }},11,0/300x300?access_token=pk.eyJ1IjoiamFwbHVtZXkiLCJhIjoiY2xzbnVmMDM0MDgyMTJrb3d1ZmE5NzcyaiJ9.szHKl7q0euanRJIjA02m4w" width="300" height="300" alt="">
       {{ end }}
@@ -36,14 +37,6 @@
   <p>{{ partial "conversation-link.html" . }} </p>
   <p>{{ partial "reply-by-email.html" . }}</p>
 
-  <div id="cusdis_thread"
-  data-host="https://cusdis.com"
-  data-app-id="a680f9d7-24a0-4a52-8d10-c06808128037"
-  data-page-id="{{ PAGE_ID }}"
-  data-page-url="{{ PAGE_URL }}"
-  data-page-title="{{ PAGE_TITLE }}"
-></div>
-<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
 
 {{ if .Site.Params.include_conversation }}
     <script type="text/javascript" src="https://micro.blog/conversation.js?url={{ .Permalink }}"></script>
