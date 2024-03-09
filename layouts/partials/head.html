@@ -62,4 +62,9 @@
      {{ range $filename := .Site.Params.plugins_html }}
        {{ partial $filename $ }}
      {{ end }}
+     
+     
+     {{ partial "lite-youtube.html" . }}
+     
+     
 </head>
